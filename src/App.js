@@ -27,10 +27,13 @@ function App() {
       console.error(error)
     }
   }
-
   // Generate random number helper function
   function getRandomOf(number) {
     return Math.round(Math.random() * number)
+  }
+
+  function handleClick() {
+    getData()
   }
 
   return (
@@ -58,6 +61,7 @@ function App() {
           </svg>
         </button>
         <button
+          onClick={handleClick}
           id="new-quote"
           className="bg-gray-500 opacity-80 hover:opacity-100 text-white font-bold py-2 px-4 rounded w-20"
         >
