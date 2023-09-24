@@ -48,6 +48,7 @@ function App() {
 
       <div className="grid grid-flow-col gap-52 h-1/6">
         <a
+          id="tweet-quote"
           href={`https://twitter.com/intent/tweet?hashtags=quotes&text="${encodeURIComponent(
             quote.text
           )}" - ${encodeURIComponent(quote.author)}`}
@@ -55,7 +56,7 @@ function App() {
           title="Tweet this quote!"
           className="bg-gray-500 opacity-80 hover:opacity-100 text-white font-bold py-2 px-4 rounded w-14 grid place-items-center"
         >
-          <button id="tweet-quote">
+          <button>
             {/* Twitter Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
