@@ -37,14 +37,6 @@ function App() {
     getData()
   }
 
-  // async function handleTweet() {
-  //   try {
-  //     alert('ok')
-  //   } catch (error) {
-  //     console.error(error)
-  //   }
-  // }
-
   return (
     <div id="quote-box" className="w-96 h-72 bg-[#F8F8FF] p-4 rounded-lg">
       <div id="text" className="grid place-items-center text-center	overflow-hidden h-4/6">
@@ -56,8 +48,6 @@ function App() {
 
       <div className="grid grid-flow-col gap-52 h-1/6">
         <a
-          // onClick={handleTweet}
-          // href="https://twitter.com/intent/tweet"
           href={`https://twitter.com/intent/tweet?hashtags=quotes&text="${encodeURIComponent(
             quote.text
           )}" - ${encodeURIComponent(quote.author)}`}
